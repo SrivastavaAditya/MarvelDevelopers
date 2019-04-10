@@ -1,5 +1,8 @@
 package com.example.adityasrivastava.marvelcharacters.models
 
+/**
+ * Data class
+ */
 data class Data(
 	val total: Int? = null,
 	val offset: Int? = null,

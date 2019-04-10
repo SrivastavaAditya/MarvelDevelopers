@@ -5,6 +5,9 @@ import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Query
 
+/**
+ * Retrofit Interface
+ */
 interface RetrofitInterface {
     @GET("characters")
     fun getMarvelCharacters(@Query(Keys.API_KEY) apiKey: String,

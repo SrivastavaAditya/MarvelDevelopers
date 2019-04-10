@@ -1,5 +1,8 @@
 package com.example.adityasrivastava.marvelcharacters.models
 
+/**
+ * Response Class
+ */
 data class Response(
 	val copyright: String? = null,
 	val code: Int? = null,

@@ -4,11 +4,13 @@ import android.app.Dialog
 import android.content.Context
 import com.example.adityasrivastava.marvelcharacters.R
 
+/**
+ * Loading Dialog
+ */
 class LoadingDialog(context: Context) {
-    var dialog: Dialog
+    var dialog: Dialog = Dialog(context)
 
     init {
-        dialog = Dialog(context)
         dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
         dialog.setContentView(R.layout.loading_dialog)
     }
@@ -19,10 +21,16 @@ class LoadingDialog(context: Context) {
         }
     }
 
+    /**
+     * Show
+     */
     fun show() {
         dialog.show()
     }
 
+    /**
+     * Dismiss
+     */
     fun dismiss() {
         dialog.dismiss()
     }

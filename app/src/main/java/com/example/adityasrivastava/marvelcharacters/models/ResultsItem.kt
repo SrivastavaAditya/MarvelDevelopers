@@ -1,5 +1,8 @@
 package com.example.adityasrivastava.marvelcharacters.models
 
+/**
+ * ResultsItem class
+ */
 data class ResultsItem(
 	val thumbnail: Thumbnail? = null,
 	val name: String? = null,

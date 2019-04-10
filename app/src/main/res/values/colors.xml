@@ -5,6 +5,5 @@
     <color name="colorAccent">#484848</color>
     <color name="app_text_color">#484848</color>
     <color name="white">#FFFFFF</color>
-    <color name="card_view_bg">#00796A</color>
     <color name="black">#000000</color>
 </resources>

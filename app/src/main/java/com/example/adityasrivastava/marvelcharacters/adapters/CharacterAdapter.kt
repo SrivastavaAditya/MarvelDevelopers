@@ -10,9 +10,16 @@ import com.example.adityasrivastava.marvelcharacters.viewholders.CharacterVH
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.character_item.view.*
 
+/**
+ * CharacterAdapter
+ */
 class CharacterAdapter(val context: Context): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
+    /**
+     * List
+     */
     var list = arrayListOf<ResultsItem>()
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val rootView = LayoutInflater.from(context).inflate(R.layout.character_item, parent, false)
         return CharacterVH(rootView)
@@ -23,7 +30,9 @@ class CharacterAdapter(val context: Context): RecyclerView.Adapter<RecyclerView.
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val mCharacter = list.get(position)
         val mThumbNail = mCharacter.thumbnail
-        var viewHolder = holder as CharacterVH
+        val viewHolder = holder as CharacterVH
+
+        //Populating values on UI
         viewHolder.itemView.tv_name.text = mCharacter.name
 
         if(mCharacter.description.equals("")){
@@ -32,6 +41,7 @@ class CharacterAdapter(val context: Context): RecyclerView.Adapter<RecyclerView.
             viewHolder.itemView.tv_description.text = mCharacter.description
         }
 
+        //Loading Images
         if(mThumbNail?.path != null && !mThumbNail.path.equals("")){
             Picasso.get().load("${mThumbNail.path}/landscape_amazing.${mThumbNail.extension}")
                 .into(viewHolder.itemView.img_holder)

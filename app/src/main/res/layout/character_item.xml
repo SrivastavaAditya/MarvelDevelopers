@@ -29,7 +29,7 @@
                 android:layout_width="@dimen/dp75"
                 android:layout_height="@dimen/dp75"
                 app:civ_border_color="@color/colorPrimaryDark"
-                app:civ_border_width="5dp"
+                app:civ_border_width="@dimen/dp5"
                 android:id="@+id/small_img"
                 app:layout_constraintTop_toTopOf="@+id/img_holder"
                 app:layout_constraintStart_toStartOf="@+id/img_holder"
@@ -38,7 +38,7 @@
         />
 
         <TextView
-                android:layout_width="0dp"
+                android:layout_width="@dimen/dp0"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_name"
                 android:text="@string/character_name"
@@ -57,24 +57,24 @@
                 android:background="@color/black"
                 app:layout_constraintStart_toStartOf="@+id/tv_name"
                 app:layout_constraintTop_toBottomOf="@+id/tv_name"
-                android:layout_marginTop="4dp"/>
+                android:layout_marginTop="@dimen/dp4"/>
 
         <TextView
                 android:textStyle="italic"
-                android:layout_width="0dp"
+                android:layout_width="@dimen/dp0"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_description"
                 android:text="@string/description"
                 android:textColor="@color/white"
                 android:maxLines="3"
                 android:ellipsize="end"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/dp8"
                 app:layout_constraintTop_toTopOf="@+id/view_line"
                 app:layout_constraintStart_toStartOf="@+id/view_line"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="@dimen/dp16"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginBottom="16dp"/>
+                android:layout_marginBottom="@dimen/dp16"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>
