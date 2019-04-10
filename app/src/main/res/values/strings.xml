@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MarvelCharacters</string>
+    <string name="network_error">Network Error</string>
+    <string name="character_name">Character Name</string>
+    <string name="description">Description:</string>
+    <string name="modified">Modified:</string>
+    <string name="no_characters">No Characters</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="no_description_available">No Description Available</string>
+    <string name="marvel_characters">Marvel Characters</string>
 </resources>
